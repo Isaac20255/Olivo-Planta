@@ -1,0 +1,437 @@
+/* ============================================================
+   SECCIÓN ABOUT
+   ============================================================ */
+
+#about {
+    padding: 80px 0px;
+    position: relative;
+    z-index: 9;
+    background-color: #fcfcfc; 
+}
+
+/* Encabezado de la sección */
+#about .section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#about .section-heading h6 {
+    color: #fb5849; 
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#about .section-heading h2 {
+    color: #072f4e;
+    font-size: 36px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+/* Texto descriptivo: le di más ancho para que no se vea vacío a los lados */
+.main-description {
+    text-align: center;
+    margin: 0 auto 60px auto;
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 1000px; 
+    padding: 0 20px;
+}
+
+/* Lista de servicios con Flexbox */
+.olv-about-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+    justify-content: center;
+}
+
+/* Tarjetas: aumenté el padding a 45px para llenar el espacio visual */
+.olv-about-item {
+    background: #ffffff;
+    flex: 1 1 calc(33.333% - 30px);
+    min-width: 320px;
+    padding: 45px; 
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f0f0f0;
+}
+
+.olv-about-item:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+    border-color: #072f4e;
+}
+
+/* Cabecera de la card: ahora solo con el título centrado o alineado */
+.olv-card-header {
+    display: block; /* Cambiado de flex a block al quitar el icono */
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+.olv-about-item h3 {
+    font-size: 24px; /* Un poco más grande para compensar la falta del cuadro */
+    font-weight: 700;
+    color: #072f4e;
+    margin: 0;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Pequeño detalle: una línea debajo del título para que no se vea simple */
+.olv-about-item h3::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #fb5849;
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+/* Texto de la card: flex-grow: 1 para que las imágenes se alineen abajo */
+.olv-about-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+/* Contenedor de la imagen: modificado con contain para no cortar nada */
+.olv-img-container {
+    width: 100%;
+    height: 250px; 
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: auto;
+    background-color: #fff; 
+}
+
+.olv-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    object-position: center;
+    transition: transform 0.6s ease;
+}
+
+.olv-about-item:hover .olv-img-container img {
+    transform: scale(1.05);
+}
+
+
+
+/* Estilo del botón */
+.olv-about-item button {
+    align-self: center; /* Esto lo centra horizontalmente */
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #072f4e;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(7, 47, 78, 0.2);
+}
+
+/* Efecto al pasar el mouse */
+.olv-about-item button:hover {
+    background-color: #fb5849; /* Cambia al rojo de tus acentos */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(251, 88, 73, 0.3);
+}
+
+/* Efecto al hacer clic */
+.olv-about-item button:active {
+    transform: translateY(-1px);
+}
+
+
+
+
+/* Esto es lo que hace que el mapa sea visible */
+#map {
+    height: 450px; 
+    width: 100%;
+    min-height: 450px; /* Asegura que no se colapse */
+}
+
+/* Estilo del botón solicitado */
+.btn-olivo {
+    background-color: #0d6efd !important; /* Azul */
+    color: white !important;
+    border: none;
+    margin-top: 40px; /* Espacio hacia abajo */
+    transition: background-color 0.3s ease;
+}
+
+.btn-olivo:hover {
+    background-color: #fd7e14 !important; /* Naranja al pasar el mouse */
+    color: white !important;
+}
+
+.card-olivo {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+/* Centrar las dos pestañas */
+.heading-tabs ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.heading-tabs ul li {
+    margin: 0 15px !important;
+}
+
+/* Colores de Olivo */
+.tab-item .price h6 {
+    background-color: #0d6efd; /* Azul principal */
+    color: #fff;
+    font-weight: 700;
+}
+
+.heading-tabs ul li.ui-tabs-active a {
+    color: #fd7e14 !important; /* Naranja activo */
+}
+
+/* Mejora de las imágenes */
+.tab-item img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Evita que la imagen se deforme */
+}
+
+
+
+/* Forzar estilos en elementos que la plantilla no reconoce */
+.contact-form select,
+.contact-form input[type="date"],
+.contact-form textarea {
+    color: #7a7a7a !important;
+    font-size: 14px !important;
+    border: 1px solid #ddd !important;
+    background-color: #f7f7f7 !important;
+    width: 100% !important;
+    border-radius: 5px !important;
+    outline: none !important;
+    padding: 10px 15px !important;
+    margin-bottom: 25px !important;
+    height: 45px;
+}
+
+/* El textarea debe ser más alto */
+.contact-form textarea {
+    height: 150px !important;
+}
+
+/* El selector múltiple debe mostrar las opciones */
+#academic_grade {
+    height: auto !important;
+    min-height: 120px !important;
+}
+
+/* El botón debe seguir el estilo de la plantilla */
+#form-submit {
+    background-color: #fb5849 !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 12px 25px !important;
+    text-transform: uppercase !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    border-radius: 5px !important;
+    transition: 0.3s !important;
+}
+
+#form-submit:hover {
+    background-color: #2a2a2a !important;
+}
+
+.small.text-muted {
+    font-size: 12px;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #aaa;
+}
+
+
+/* Empujar el select hacia abajo para alinear con el input de rango */
+.align-with-range {
+    margin-top: 22px !important; 
+}
+
+/* Estilo para que el select se vea igual a los inputs de la plantilla */
+#gender {
+    width: 100% !important;
+    height: 45px !important;
+    background-color: #f7f7f7 !important;
+    border: 1px solid #ddd !important;
+    border-radius: 5px !important;
+    padding: 0 15px !important;
+    color: #7a7a7a !important;
+    outline: none !important;
+    cursor: pointer;
+}
+
+/* Estilo para la barra de rango */
+#income {
+    width: 100%;
+    margin-top: 10px;
+    accent-color: #fb5849; /* Color de la marca */
+}
+
+
+/* Estilo del Título en Azul */
+.form-title-azul {
+    color: #1a3c5e !important; /* Azul profundo profesional */
+    font-weight: 800 !important;
+    font-size: 28px !important;
+    margin-bottom: 30px !important;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.form-title-azul::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 45px;
+    height: 3px;
+    background-color: #fb5849; /* Detalle en el naranja de la marca */
+}
+
+/* Alineación de Género con el Rango */
+.align-with-range {
+    margin-top: 22px !important; 
+}
+
+/* Estilización de los campos nuevos */
+#gender, #academic_grade, #birthdate, #message {
+    background-color: #f7f7f7 !important;
+    border: 1px solid #ddd !important;
+    color: #7a7a7a !important;
+    width: 100% !important;
+    border-radius: 5px !important;
+    padding: 10px 15px !important;
+    outline: none !important;
+}
+
+
+/* ============================================================
+   SECCIÓN CONTACTO - TÍTULO CENTRADO Y ESPACIADO
+   ============================================================ */
+
+/* 1. Título del Formulario Centrado */
+.form-title-azul {
+    color: #072f4e !important; 
+    font-size: 32px !important;
+    font-weight: 800 !important;
+    margin-bottom: 50px !important; /* Más espacio con los inputs */
+    position: relative;
+    display: block; /* Cambiado a block para facilitar el centrado */
+    text-align: center; /* Centra el texto */
+    padding-bottom: 15px;
+}
+
+/* Línea decorativa centrada */
+.form-title-azul::after {
+    content: '';
+    position: absolute;
+    left: 50%; /* Mueve al centro */
+    transform: translateX(-50%); /* Ajuste exacto al centro */
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #fb5849; 
+    border-radius: 2px;
+}
+
+/* 2. Separación de la Sección Completa */
+.contact-form {
+    padding: 100px 0 !important; /* Separa de la sección de arriba y abajo */
+}
+
+/* 3. Alineación del Selector de Género */
+.align-with-range {
+    margin-top: 25px !important; 
+}
+
+#gender {
+    width: 100% !important;
+    height: 45px !important;
+    background-color: #f7f7f7 !important;
+    border: 1px solid #ddd !important;
+    border-radius: 5px !important;
+    padding: 0 15px !important;
+    color: #7a7a7a !important;
+    outline: none !important;
+    cursor: pointer;
+}
+
+/* 4. Ajuste Móvil */
+@media (max-width: 991px) {
+    .contact-form {
+        padding: 60px 0 !important;
+    }
+    .align-with-range {
+        margin-top: 0 !important;
+    }
+}
+
+
+/* Ajuste móvil para la alineación */
+@media (max-width: 991px) {
+    .align-with-range {
+        margin-top: 0 !important;
+    }
+}
+
+
+
+
+
+/* Ajuste de márgenes para dispositivos móviles */
+@media (max-width: 991px) {
+    .align-with-range {
+        margin-top: 0 !important;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .olv-about-item {
+        flex: 1 1 100%;
+        padding: 35px;
+    }
+    #about .section-heading h2 {
+        font-size: 28px;
+    }
+}
+

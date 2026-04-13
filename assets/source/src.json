@@ -26,12 +26,12 @@
   ],
   "equipo": [
     {
-      "nombre": "Isaac",
+      "nombre": "Wanda Acuña Avila",
       "cargo": "CEO / Fundador",
       "img": "assetsPropio/image/EquipoTrabajo/CEO.png"
     },
     {
-      "nombre": "Joel",
+      "nombre": "Esteban García Gonzalez",
       "cargo": "Arquitecto",
       "img": "assetsPropio/image/EquipoTrabajo/Arquitecto.png"
     }

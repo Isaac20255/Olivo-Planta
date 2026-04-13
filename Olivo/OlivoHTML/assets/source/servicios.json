@@ -1,0 +1,22 @@
+{
+  "servicios": [
+    {
+      "titulo": "Arquitectura",
+      "enfoque": "Diseño, estructura y precisión técnica para crear espacios habitables y funcionales.",
+      "ruta": "assetsPropio/image/Arquitectura/Arquitectura14.jpeg",
+      "link": "arquitectura.html"
+    },
+    {
+      "titulo": "Jardinería",
+      "enfoque": "Especialistas en paisajismo y mantenimiento botánico para dar vida a tus exteriores.",
+      "ruta": "assetsPropio/image/Jardineria/Jardineria12.jpeg",
+      "link": "jardineria.html"
+    },
+    {
+      "titulo": "Diseño",
+      "enfoque": "Conceptualización estética y armonía visual para interiores y áreas comunes.",
+      "ruta": "assetsPropio/image/Jardineria/Jardineria12.jpeg",
+      "link": "diseno.html"
+    }
+  ]
+}

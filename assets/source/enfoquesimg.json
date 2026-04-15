@@ -1,0 +1,41 @@
+{
+  "proyectos": {
+    "arquitectura": [
+      "assetsPropio/image/Arquitectura/Arquitectura4.jpeg",
+      "assetsPropio/image/Arquitectura/Arquitectura5.jpeg",
+      "assetsPropio/image/Arquitectura/Arquitectura6.jpeg",
+      "assetsPropio/image/Arquitectura/Arquitectura7.jpeg",
+      "assetsPropio/image/Arquitectura/Arquitectura8.jpeg",
+      "assetsPropio/image/Arquitectura/Arquitectura9.jpeg",
+      "assetsPropio/image/Arquitectura/Arquitectura10.jpeg",
+      "assetsPropio/image/Arquitectura/Arquitectura11.jpeg",
+      "assetsPropio/image/Arquitectura/Arquitectura12.jpeg",
+      "assetsPropio/image/Arquitectura/Arquitectura13.jpeg",
+      "assetsPropio/image/Arquitectura/Arquitectura14.jpeg",
+      "assetsPropio/image/Arquitectura/Arquitectura16.jpeg"
+    ],
+    "diseno": [
+      "assetsPropio/image/Arquitectura/Arquitectura1.jpeg",
+      "assetsPropio/image/Jardineria/Jardineria7.jpeg",
+      "assetsPropio/image/Arquitectura/Arquitectura2.jpeg",
+      "assetsPropio/image/Jardineria/Jardineria10.jpeg"
+    ],
+    "jardineria": [
+      "assetsPropio/image/Jardineria/Jardineria2.jpeg",
+      "assetsPropio/image/Jardineria/Jardineria3.jpeg",
+      "assetsPropio/image/Jardineria/Jardineria11.jpeg",
+      "assetsPropio/image/Jardineria/Jardineria4.jpeg",
+      "assetsPropio/image/Jardineria/Jardineria5.jpeg",
+      "assetsPropio/image/Jardineria/Jardineria6.jpeg",
+      "assetsPropio/image/Jardineria/Jardineria7.jpeg",
+      "assetsPropio/image/Jardineria/Jardineria8.jpeg",
+      "assetsPropio/image/Jardineria/Jardineria9.jpeg",
+      "assetsPropio/image/Jardineria/Jardineria10.jpeg",
+      "assetsPropio/image/Jardineria/Jardineria12.jpeg",
+      "assetsPropio/image/Arquitectura/Arquitectura16.jpeg",
+      "assetsPropio/image/Jardineria/Jardineria2.jpeg",
+      "assetsPropio/image/Arquitectura/Arquitectura10.jpeg",
+      "assetsPropio/image/Jardineria/Jardineria5.jpeg"
+    ]
+  }
+}

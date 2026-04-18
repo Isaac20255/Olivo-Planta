@@ -1,27 +1,24 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch('assets/source/src.json')
+    // Añadimos un timestamp (?t=...) para que el navegador ignore el caché
+    const jsonPath = 'assets/source/src.json?t=' + new Date().getTime();
+
+    fetch(jsonPath)
         .then(response => {
             if (!response.ok) throw new Error("No se pudo cargar el archivo src.json");
             return response.json();
         })
         .then(data => {
-            // --- 1. CARGAR BANNER (BOOTSTRAP) ---
+            // --- 1. CARGAR BANNER ---
             const bannerContainer = document.querySelector('#carouselExampleIndicators .carousel-inner');
-            const bannerIndicators = document.querySelector('#carouselExampleIndicators .carousel-indicators');
-
             if (bannerContainer && data.banner) {
                 bannerContainer.innerHTML = data.banner.map((img, index) => `
                     <div class="carousel-item ${index === 0 ? 'active' : ''}">
                         <img src="${img}" class="d-block w-100" alt="Banner" style="object-fit: cover; height: 500px;">
                     </div>
                 `).join('');
-
-                if (bannerIndicators) {
-                    bannerIndicators.innerHTML = data.banner.map((_, index) => `
-                        <li data-target="#carouselExampleIndicators" data-slide-to="${index}" class="${index === 0 ? 'active' : ''}"></li>
-                    `).join('');
-                }
-                $('#carouselExampleIndicators').carousel();
+                
+                // Reinicializar el carousel de Bootstrap si es necesario
+                $('#carouselExampleIndicators').carousel('dispose').carousel();
             }
 
             // --- 2. CARGAR SERVICIOS ---
@@ -66,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // --- 4. CARGAR PLANTAS ---
             const intCont = document.getElementById('contenedor-interiores');
             const extCont = document.getElementById('contenedor-exteriores');
+            
             const crearCardPlanta = (p) => `
                 <div class="col-lg-6">
                     <div class="tab-item">
@@ -83,5 +81,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 extCont.innerHTML = data.plantas.exteriores.map(crearCardPlanta).join('');
             }
         })
-        .catch(error => console.error("Error cargando el JSON:", error));
+        .catch(error => {
+            console.error("Error crítico:", error);
+            // Mostrar error visual en consola para depurar rápido
+            console.warn("Revisa que el JSON no tenga errores de comas o comillas.");
+        });
 });

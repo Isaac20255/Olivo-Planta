@@ -1,13 +1,15 @@
 {
   "banner": [
-    "assetsPropio/image/Arquitectura/Arquitectura14.jpeg",
-    "assetsPropio/image/Jardineria/Jardineria3.jpeg",
-    "assetsPropio/image/Arquitectura/Arquitectura15.jpeg"
+    "assetsPropio/image/Arquitectura/Arquitectura1.jpeg",
+    "assetsPropio/image/Arquitectura/Arquitectura17.jpeg",
+    "assetsPropio/image/Arquitectura/Arquitectura15.jpeg",
+    "assetsPropio/image/Arquitectura/Arquitectura18.jpeg",
+    "assetsPropio/image/Arquitectura/Arquitectura19.jpeg"
   ],
   "servicios": [
     {
       "titulo": "Arquitectura",
-      "enfoque": "Diseño, estructura y precisión técnica para crear espacios habitables y funcionales.",
+      "enfoque": "Ejecutamos sus proyectos, desarrollando todas las etapas del proceso constructivo",
       "ruta": "assetsPropio/image/Arquitectura/Arquitectura14.jpeg",
       "link": "arquitectura.html"
     },
@@ -20,7 +22,7 @@
     {
       "titulo": "Diseño",
       "enfoque": "Conceptualización estética y armonía visual para interiores y áreas comunes.",
-      "ruta": "assetsPropio/image/Jardineria/Jardineria12.jpeg",
+      "ruta": "assetsPropio/image/Jardineria/Jardineria3.jpeg",
       "link": "diseno.html"
     }
   ],
@@ -31,8 +33,8 @@
       "img": "assetsPropio/image/EquipoTrabajo/CEO.png"
     },
     {
-      "nombre": "Esteban García Gonzalez",
-      "cargo": "Arquitecto",
+      "nombre": "Arquitecto Esteban García Gonzalez",
+      "cargo": "Gerente General",
       "img": "assetsPropio/image/EquipoTrabajo/Arquitecto.png"
     }
   ],

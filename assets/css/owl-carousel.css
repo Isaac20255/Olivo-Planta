@@ -184,3 +184,11 @@
   z-index: 1;
   height: 100%;
   width: 100%; }
+
+
+  /* Modificador de tamaño para las imágenes del Owl Carousel */
+.owl-carousel .owl-item img {
+    width: 50% !important;   /* Ancho total del contenedor */
+    height: 250px !important; /* Ajusta este valor según necesites */
+    object-fit: cover !important; /* Evita que se deformen */
+}

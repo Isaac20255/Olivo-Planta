@@ -1275,6 +1275,17 @@ chefs
   color: #2a2a2a;
 }
 
+/* Aplicar el estilo del párrafo al h2 de la sección equipo */
+#chefs .section-heading h2 {
+    color: #666 !important;         /* El mismo gris del párrafo */
+    font-size: 1.1rem !important;   /* El mismo tamaño de fuente */
+    line-height: 1.8 !important;    /* El mismo interlineado */
+    font-weight: 400 !important;    /* Peso normal, no negrita */
+    max-width: 900px;               /* Limita el ancho como el p */
+    margin: 10px auto 0 auto;       /* Lo centra */
+    text-transform: none;           /* Quita mayúsculas automáticas */
+}
+
 /* 
 ---------------------------------------------
 reservation

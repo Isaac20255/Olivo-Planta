@@ -1,0 +1,85 @@
+/* Estilos generales */
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #2a2a2a;
+}
+
+/* Encabezado */
+header {
+  background-color: #072f4e;
+  color: #fff;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+/* Contenido principal */
+main {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Sección del autor */
+#autor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#autor .foto {
+  flex: 1 1 250px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#autor .foto img {
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+#autor .info {
+  flex: 2 1 400px;
+  padding: 0 20px;
+}
+
+#autor .info h2 {
+  color: #072f4e;
+  margin-bottom: 20px;
+}
+
+#autor .info p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+/* Pie de página */
+footer {
+  background-color: #072f4e;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+  #autor {
+    flex-direction: column;
+    text-align: center;
+  }
+  #autor .info {
+    padding: 0;
+  }
+}

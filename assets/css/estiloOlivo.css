@@ -404,27 +404,12 @@
 }
 
 
-/* Ajuste móvil para la alineación */
-@media (max-width: 991px) {
-    .align-with-range {
-        margin-top: 0 !important;
-    }
-}
-
-
-
-
-
 /* Ajuste de márgenes para dispositivos móviles */
 @media (max-width: 991px) {
     .align-with-range {
         margin-top: 0 !important;
     }
 }
-
-
-
-
 
 
 @media (max-width: 768px) {

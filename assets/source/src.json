@@ -36,10 +36,57 @@
       "nombre": "Arquitecto Esteban García Gonzalez",
       "cargo": "Gerente General",
       "img": "assetsPropio/image/EquipoTrabajo/Arquitecto.png"
+    },
+    {
+      "nombre": "Adriana Ortiz",
+      "cargo": "Mercadeo",
+      "img": "assetsPropio/image/EquipoTrabajo/Mercadeo.png"
     }
   ],
   "plantas": {
-    "interiores": [],
-    "exteriores": []
+    "interiores": [
+      {
+        "img": "assetsPropio/image/Plantas/Plantas2.jpeg",
+        "nombre": "Clusia Rosea (Copey)",
+        "desc": "Planta de interior robusta con hojas gruesas y brillantes. Ideal para decorar rincones con luz indirecta."
+      },
+      {
+        "img": "assetsPropio/image/Plantas/Plantas6.jpeg",
+        "nombre": "Zamia ",
+        "desc": "Espacios de sombra y riego bajo"
+      },
+      {
+        "img": "assetsPropio/image/Plantas/Plantas7.jpeg",
+        "nombre": "Costilla de Adán",
+        "desc": "Sombra y riego abundante"
+      },
+      {
+        "img": "assetsPropio/image/Plantas/Plantas10.jpeg",
+        "nombre": "Palma de salón",
+        "desc": "Riego alto y sombra"
+      }
+    ],
+    "exteriores": [
+      {
+        "img": "assetsPropio/image/Plantas/Plantas11.jpeg",
+        "nombre": "Pata de elefante",
+        "desc": "Sol y poco riego"
+      },
+      {
+        "img": "assetsPropio/image/Plantas/Plantas1.jpeg",
+        "nombre": "Palmera viajera",
+        "desc": "Sol directo y buen riego"
+      },
+      {
+        "img": "assetsPropio/image/Plantas/Plantas2.jpeg",
+        "nombre": "Copey",
+        "desc": "Claridad alta y riego moderado"
+      },
+      {
+        "img": "assetsPropio/image/Plantas/Plantas3.jpeg",
+        "nombre": "Ficus Lyrata",
+        "desc": "Claridad alta y riego moderado"
+      }
+    ]
   }
 }

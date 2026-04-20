@@ -70,7 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         <img src="${p.img}" alt="${p.nombre}">
                         <h4>${p.nombre}</h4>
                         <p>${p.desc}</p>
-                        <div class="price"><h6>$${p.precio}</h6></div>
                     </div>
                 </div>`;
 

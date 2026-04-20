@@ -1455,59 +1455,91 @@ reservation
   color: #2a2a2a;
 }
 
-/*
----------------------------------------------
-offers
----------------------------------------------
-*/
+/* ---------------------------------------------
+OFFERS / COLECCIÓN DE PLANTAS
+--------------------------------------------- */
 
-/* --- Ajustes para que la imagen sea ancha y ocupe todo el espacio --- */
-
-#offers .tabs-content img {
-  /* Eliminamos el float y el ancho fijo de 100px */
-  float: none !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  margin-right: 0px !important;
-
-  /* Ajustamos la altura para que se vea ancha (puedes subir a 350px si la quieres más alta) */
-  height: 300px !important;
-  object-fit: cover !important;
-  border-radius: 5px 5px 0 0 !important;
-  margin-bottom: 20px;
+/* SEPARACIÓN: Espacio entre selectores y las tarjetas */
+#offers .tabs-content {
+    margin-top: 50px !important; /* Aumenta este valor si ocupas más separación */
 }
 
+/* Contenedores de carga dinámica */
+#contenedor-interiores, 
+#contenedor-exteriores {
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Contenedor de la tarjeta (Card) */
 #offers .tabs-content .tab-item {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  padding-bottom: 20px; /* Espacio al final de la tarjeta */
-  overflow: hidden;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.08);
+    padding-bottom: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    /* Control de tamaño: más pequeña y centrada */
+    max-width: 320px; 
+    margin: 0 auto 30px auto; 
+    border: 1px solid #eee;
 }
 
-#offers .tabs-content h4,
+/* Efecto Hover */
+#offers .tabs-content .tab-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Imagen de la Planta: Ocupa todo el ancho y muestra la base */
+#offers .tabs-content img {
+    width: 100% !important;
+    height: 350px !important; 
+    object-fit: cover !important; 
+    object-position: center bottom !important; 
+    border-radius: 12px 12px 0 0 !important;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Título de la Planta */
+#offers .tabs-content h4 {
+    font-size: 19px;
+    font-weight: 700;
+    color: #2a2a2a;
+    margin-bottom: 8px;
+    padding: 0 20px !important;
+    text-align: left;
+}
+
+/* Descripción */
 #offers .tabs-content p {
-  /* Quitamos los márgenes laterales que dejaban espacio para el precio absoluto */
-  margin-right: 20px !important;
-  padding-left: 20px !important;
+    font-size: 14px;
+    color: #7a7a7a;
+    line-height: 22px;
+    padding: 0 20px !important;
+    margin-bottom: 15px !important;
+    text-align: left;
 }
 
-#offers .tabs-content .price h6 {
-  /* Cambiamos la posición absoluta para que no flote sobre el texto de forma desordenada */
-  position: relative !important;
-  top: 0 !important;
-  right: 0 !important;
-  margin-left: 20px !important;
-  margin-top: 10px;
-
-  /* Mantenemos el estilo circular o lo hacemos rectangular */
-  width: auto !important;
-  height: auto !important;
-  line-height: normal !important;
-  padding: 10px 20px !important;
-  display: inline-block !important;
+/* Ajuste de los iconos de los selectores (Interiores / Exteriores) */
+#offers .heading-tabs ul li a img {
+    width: 35px !important;
+    height: 30px !important;
+    margin-right: 10px;
+    display: inline-block;
 }
 
+/* Manejo de visibilidad de las pestañas */
+.tabs-content article {
+    display: none;
+}
+
+.tabs-content article.active, 
+.tabs-content article:target {
+    display: block !important;
+}
 /* 
 ---------------------------------------------
 footer
@@ -1584,60 +1616,114 @@ footer .logo img {
 responsive
 --------------------------------------------- 
 */
+@media (max-width: 768px) {
+    /* --- 1. SECCIÓN SUPERIOR (LOGO Y TEXTO AZUL) --- */
+    #top {
+        padding-top: 80px !important;
+        height: auto !important;
+    }
 
-@media (max-width: 992px) {
-  #top {
-    padding-top: 100px;
-    height: auto;
-  }
-  .header-area .main-nav .nav li.submenu:after {
-    right: 3px;
-  }
-  .header-area .main-nav .nav li.submenu {
-    padding-right: 15px;
-  }
-  .header-area .main-nav .nav li {
-    padding-right: 5px;
-    padding-left: 5px;
-  }
-  .header-area .main-nav .nav li a {
-    font-size: 14px;
-    letter-spacing: 0px;
-  }
-  #top .left-content {
-    text-align: center;
-    padding: 25% 0px;
-  }
-  #about .right-content {
-    margin-left: 0px;
-    margin-top: 30px;
-  }
-  #chefs .chef-item {
-    margin-bottom: 30px;
-  }
-  #reservation .phone {
-    margin-bottom: 60px;
-  }
-  #contact {
-    margin-left: 0px;
-    margin-top: 30px;
-  }
-  #offers .tabs-content .left-list {
-    margin-right: 0px;
-  }
+    #top .left-content {
+        background-color: #072f4e !important;
+        width: 100% !important;
+        padding: 0 !important;
+        display: block !important;
+    }
 
-  #offers .tabs-content .right-list {
-    margin-left: 0px;
-  }
-  footer .right-text-content {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  footer .left-text-content p {
-    text-align: center;
-    margin-top: 30px;
-  }
+    /* ESTA ES LA PARTE QUE SOLICITASTE ESPECÍFICAMENTE */
+    #top .inner-content {
+        padding: 60px 20px !important; /* Espacio arriba y abajo */
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    .logo-top {
+        display: block !important;
+        margin-bottom: 20px !important;
+    }
+
+    .logo-top img {
+        width: 150px !important;
+        height: 150px !important;
+        border-radius: 50% !important;
+        border: 4px solid white !important;
+        background-color: white !important;
+        object-fit: contain !important;
+        display: inline-block !important;
+    }
+
+    #top .inner-content h4 {
+        color: #ffffff !important;
+        font-size: 1.5rem !important;
+        margin-top: 15px !important;
+        margin-bottom: 10px !important;
+        display: block !important;
+        font-weight: 700 !important;
+    }
+
+    #top .inner-content h6 {
+        color: rgba(255, 255, 255, 0.9) !important;
+        font-size: 0.9rem !important;
+        line-height: 1.4 !important;
+        display: block !important;
+        max-width: 90% !important;
+        margin: 0 auto !important;
+    }
+
+    /* Estirar Carrusel al ancho total */
+    .container-fluid { padding: 0 !important; }
+    .col-lg-8 { padding: 0 !important; width: 100% !important; }
+
+    /* --- 2. SECCIÓN ¿CÓMO TRABAJAMOS? --- */
+    .process-section {
+        display: block !important;
+        padding: 60px 20px !important;
+        height: auto !important;
+    }
+
+    .process-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 25px !important;
+    }
+
+    .process-step {
+        max-width: 100% !important;
+    }
+
+    /* --- 3. SECCIÓN CONTACTO (FORMULARIO) --- */
+    .contact-section {
+        padding: 40px 15px !important;
+        height: auto !important;
+    }
+
+    .contact-container {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    .contact-form {
+        margin-top: 0 !important; 
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 30px 20px !important;
+        box-sizing: border-box !important;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
 }
+
+
 
 #preloader {
   overflow: hidden;

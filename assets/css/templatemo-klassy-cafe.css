@@ -1459,6 +1459,13 @@ reservation
 OFFERS / COLECCIÓN DE PLANTAS
 --------------------------------------------- */
 
+/* Espacio extra arriba de la sección completa */
+#offers {
+  margin-top: 80px; /* ajusta este valor según lo que necesites */
+}
+
+
+
 /* SEPARACIÓN: Espacio entre selectores y las tarjetas */
 #offers .tabs-content {
     margin-top: 50px !important; /* Aumenta este valor si ocupas más separación */
